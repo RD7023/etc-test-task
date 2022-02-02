@@ -23,7 +23,7 @@ change_time = ChangeTime(base_datetime=datetime(2022, 2, 2, 10, 0, 0))
 app = Flask(__name__)
 
 
-@app.route("/updateTasks", methods=["POST"])
+@app.route("/updateTasks", methods=["GET"])
 def update_tasks():
     # Last Update
     page = client.get_block(table_url)
@@ -80,7 +80,7 @@ def update_tasks():
         except:
             pass
 
-    # return "Successfully Updated Tasks"
+    return "Updated Tasks"
 
 
 if __name__ == "__main__":
