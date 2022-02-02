@@ -2,6 +2,8 @@ from datetime import timedelta, date
 
 import pytz
 timezone = pytz.timezone("Europe/Kiev")
+
+
 class DateUtils:
     possible_days = ['Mo', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
