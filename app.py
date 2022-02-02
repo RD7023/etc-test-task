@@ -80,6 +80,8 @@ def update_tasks():
         except:
             pass
 
+    return "Successfully Updated Tasks"
+
 
 if __name__ == "__main__":
 
