@@ -1,7 +1,5 @@
 from datetime import timedelta, date
 
-import pytz
-timezone = pytz.timezone("Europe/Kiev")
 
 
 class DateUtils:

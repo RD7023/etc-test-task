@@ -2,7 +2,7 @@
 import os
 from flask import Flask
 from datetime import datetime, date
-import pytz
+
 
 from notion.client import NotionClient
 from utills.task import Task
@@ -10,7 +10,6 @@ from utills.date_utils import DateUtils
 from utills.change_time import ChangeTime
 
 
-timezone = pytz.timezone("Europe/Kiev")
 
 token_v2 = os.environ.get("TOKEN")
 table_url = os.environ.get("URL")
@@ -18,7 +17,7 @@ table_url = os.environ.get("URL")
 
 # Obtain the `token_v2` value by inspecting your browser cookies on a logged-in (non-guest) session on Notion.so
 client = NotionClient(token_v2=token_v2)
-change_time = ChangeTime(base_datetime=timezone.localize(datetime(2022, 2, 2, 10, 0, 0)))
+change_time = ChangeTime(base_datetime=datetime(2022, 2, 2, 11, 20, 0))
 
 
 app = Flask(__name__)
