@@ -10,7 +10,6 @@ from utills.date_utils import DateUtils
 from utills.change_time import ChangeTime
 
 
-
 token_v2 = os.environ.get("TOKEN")
 table_url = os.environ.get("URL")
 
